@@ -126,6 +126,16 @@ header {
     margin-top:20px;
 }
 
+.Profile
+{
+    position:relative;
+    height:600px;
+    width: 550px;
+    margin-top: 306px;
+    left:675px;
+    z-index: 0;
+}
+
 .main-nav {
     float: right;
     list-style: none;
@@ -136,6 +146,7 @@ header {
     display: inline-block;
     margin-left:40px;
 }
+
 
 .main-nav li a:link,
 .main-nav li a:visited{
@@ -151,6 +162,15 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active{
-    border-bottom: 2px solid #e67622;
+    border-bottom: 2px solid #4aff3a;
 }
 
+.vertical-bar{
+    border-left: 6px solid green;
+    position:relative;
+    height:600px;
+    width: 550px;
+    margin-top: 306px;
+    left:675px;
+    z-index: 0;
+}
