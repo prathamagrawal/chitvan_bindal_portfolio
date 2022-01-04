@@ -7,17 +7,19 @@
     padding:0;
     box-sizing:border-box;
 }
+
 html,
 body{
-    background-color:rgb(255, 255, 255);
+    background-color:white;
     position: relative;
-    color:rgb(255, 255, 255);
+    color:#555;
     font-family:'Lato','Arial','sans-serif';
     font-size:20px;
     font-weight:300;
     text-rendering:optimizeLegibility;
     overflow-x: hidden
 }
+
 .clearfix{zoom:1}
 .clearfix{
     content: '.';
@@ -28,22 +30,20 @@ body{
 
 }
 
+
 /*-----------------------------------------------*/
 /*Reusable Components*/
 /*-----------------------------------------------*/
 .row {
-    max-width: 1200px;
+    max-width: 1140px;
     position: relative;
     margin-right: auto;
     margin-left: auto;
-
 }
 
-.section
-{
-    margin:0 0 0 0;
+.section {
+    margin: 0 auto;
 }
-
 
 
 /*-----------------------------------------------*/
@@ -79,28 +79,8 @@ body{
 /*Icons*/
 /*-----------------------------------------------*/
 
-.icon-big{
-    font-size: 350%;
-    display: block;
-    color:#e67622;
-    margin-bottom: 10px;
-}
 
-
-.icon-small{
-    display: inline-block;
-    width:30px;
-    text-align:center;
-    color: #e67622;
-    font-size: 120%;
-    margin-right: 10px;
-    /* ways to align icon and font*/
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -4px;
-}
-
-header {
+.header {
     position: relative;
     background-image: url('/img/white_background.jpeg');
     height: 100vh;
@@ -109,12 +89,40 @@ header {
     background-attachment: fixed;
 }
 
+
+.main-nav {
+    position: relative;
+    list-style: none;
+    margin-top: 0px;
+    z-index: 1;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left:80px;
+    z-index: 1;
+}
+
+
+.aboutlink {
+    margin-top: 50px;
+    float: left;
+}
+.worklink {
+    margin-top: 50px;
+    float: left;
+}
+
+.contactlink {
+    margin-top: 50px;
+    float: right;
+    margin-right: 120px;
+}
+
 .logo,
 .logo-black{
-    height:100px;
+    height:120px;
     width:auto;
     float: left;
-    margin-top:20px;
 }
 .logo-black{
     display: none;
@@ -125,24 +133,20 @@ header {
 }
 
 .logo-small {
-    height: 60px;
+    position: absolute;
+    height: 50px;
     width: auto;
     margin-top:20px;
+    margin-left: 620px;
 }
-
-.main-nav {
-    position: relative;
-    float: right;
-    list-style: none;
-    margin-top: 20px;
-    z-index: 1;
-}
-
 .main-nav li{
     display: inline-block;
-    margin-left:40px;
+    margin-left:80px;
+    z-index: 1;
 }
-
+.active {
+    background-color: #04AA6D;
+  }
 
 .main-nav li a:link,
 .main-nav li a:visited{
@@ -172,14 +176,15 @@ header {
 }
 
 .vbar{
-    border-left: 700px solid green;
-    position: relative;
-    height: 100%;
+    border-left: 617px solid rgb(176, 255, 176);
+    position: fixed;
     width: 570px;
     left: 1000px;
     z-index: 0;
+    top:0px;
+    z-index: 0;
 }
 
-.h1{
-    color:#e67622;
+.hd{
+    padding:0;
 }
