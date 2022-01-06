@@ -46,6 +46,7 @@ header
 }
 
 
+
 a:link,
 a:visited {
     color: #000000;
@@ -70,6 +71,7 @@ a:active{
     z-index: 1;
     font-family: "Roboto";
     font-size:25px;
+    font-weight: normal;
 }
 .main-nav li{
     display: inline-block;
@@ -142,6 +144,29 @@ a:active{
     border-bottom: 2px solid #000000;
 }
 
+/*-----------------------------------------------*/
+/*Features*/
+/*-----------------------------------------------*/
+
+.sticky{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+.sticky .main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color: #555555;
+}
+.sticky .logo{display: none;}
+.sticky .logo-black{display: block;}
+
 
 .Profile
 {
@@ -159,13 +184,13 @@ a:active{
     font-weight: 500;
     margin-top:150px;
     font-size: 50px;
-    font-family:Nunito Sans itatin,sans-serif;
+    font-family:Nunito Sans;
 }
 
 .UserExperience
 {
     color:#6B6B6B;
-    font-family:Nunito Sans itatin,sans-serif;
+    font-family:Nunito Sans;
     font-size: 70px;
     position: absolute;
     top:300px;
@@ -176,7 +201,7 @@ a:active{
 .Designer
 {
     color:#6B6B6B;
-    font-family:Nunito Sans itatin,sans-serif;
+    font-family:Nunito Sans;
     font-size: 70px;
     position: absolute;
     font-weight: 500;
