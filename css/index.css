@@ -31,9 +31,9 @@ body{
 
 header
 {
-    background-image: url('img/landingpage.png');
+    background-image: url('../img/landingpage.png');
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
@@ -180,6 +180,7 @@ a:active{
     width: 650px;
     margin-top: 185px;
     left: 725px;
+    bottom:0px;
 }
 
 .hero-title {
@@ -245,7 +246,7 @@ a:active{
 }
 
 .work{
-    background-image: url('img/landingpage2.png');
+    background-image: url('../img/landingpage2.png');
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -324,7 +325,7 @@ a:active{
     margin: 4px 4px;
     border-radius: 50%;
     position: relative;
-    top:350px; 
+    top:380px; 
     height:89px;
     width:89px;
 }
@@ -364,28 +365,26 @@ a:active{
 .grid_container{
     display: inline-grid;
     grid-template-columns: auto;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    top:560px;
 }
 .grid_container1
 {
-    right:920px;
+    right:970px;
     padding: 10px;  
     column-gap:20px;
-    top:360px;
 }
 
 .grid_container2{
     column-gap: 20px;
-    top:78px;
     left:570px;
     padding:10px
 }
 
 .grid_container3{
     column-gap: 20px;
-    top:78px;
-    left:680px;
+    left:1000px;
     padding:10px;
     background-color: white;
 }
