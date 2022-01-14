@@ -15,7 +15,7 @@ body{
     text-rendering:optimizeLegibility;
     overflow-x: hidden;
     max-width: 1440px;
-    max-height: 1024px;
+    max-height: 1100px;
     
 }
 
@@ -36,17 +36,27 @@ header
     width: 100vw;
     background-size: cover;
     background-position:center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     z-index: 0;
 }
 
-*-----------------------------------------------*/
+/*-----------------------------------------------*/
 /*Reusable Components*/
 /*-----------------------------------------------*/
 .row {
     position: relative;
     margin-right: 100px;
     margin-left: 100px;
+}
+
+.row_navbar{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width:100%;
+    height: 10%;
+    z-index: 1;
+    background-color: white;
 }
 
 a:link,
@@ -63,8 +73,6 @@ a:active{
     border:1px solid transparent;
     transition: border-bottom 0.2s,color 0.2s;
 }
-
-
 
 .main-nav {
     position: relative;
@@ -101,20 +109,13 @@ a:active{
     font-family:Nunito Sans;
 }
 
-.logo,
-.logo-black{
+.logo{
     height:120px;
     width:auto;
     float: left;
     margin-right: 10px;
     margin-left: 50px;
-}
-.logo-black{
-    display: none;
-    height: 50px;
-    width: auto;
-    float: left;
-    margin-top:5px ;
+    z-index: 0;
 }
 
 .logo-small {
@@ -182,24 +183,36 @@ a:active{
     top:230px;
     padding:1px;
     left:120px;
+    z-index: 0;
 }
 
 .title{
     color:black;
     font-family: Nunito Sans;
     font-weight:bold;
-    margin-top:100px;
+    margin-top:130px;
     position: relative;
-    left:50px;
-    float:right;
+    float:center;
+    left:550px;
+    z-index: 0;
 }
 
 .land1about{
     color: black;
     font-family: Nunito Sans;
     font-size: 20px;
-    margin-top:230px;
+    margin-top:80px;
     margin-left: 819px;
+}
+.page2{
+    background-image: url('../img/aboutpage/land2.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    background-attachment: scroll;
+    z-index: 0;
+    bottom: 0px;
 }
 
 .title2{
@@ -207,5 +220,204 @@ a:active{
     font-family: Nunito Sans;
     font-weight:bold;
     margin-top:100px;
+    top:9.2%;
+    left:43%;
+    font-size: 48px;
     position: relative;
+    color: black;
+}
+
+.page2para1{
+    color: black;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    position: relative;
+    top:8%;
+    left: 8%;
+    padding:10px;
+}
+
+.box{
+    width:240px;
+    height:248px;
+    text-align:center;
+    font-size: 20px;
+    font-family: Nunito Sans;
+}
+
+.box1{
+    position: relative;
+    color:white;
+    top:50.8%;
+    left:9%;
+    background-color:#0D9488;
+}
+
+.box2{
+    position: relative;
+    color: black;
+    top:95px;
+    left:31%;
+    background-color: #CCFBF1;
+}
+
+.box3{
+    position: relative;
+    color:white;
+    left:52.5%;
+    bottom:270px;
+    background-color:#8C1B2F;
+}
+
+.box4{
+    position: relative;
+    color:black;
+    left:76%;
+    bottom:640px;
+    background-color:#f3e8ea;
+}
+
+.about3{
+    height:100%;
+    width:100%;
+    z-index: 0;
+}
+
+.title3{
+    color:black;
+    font-family: Nunito Sans;
+    font-weight:bold;
+    margin-top:80px;
+    left:20%;
+    top:11%;
+    font-size: 48px;
+    position: relative;
+}
+
+.container{
+    display:inline-grid;
+    margin-left:12.5%;
+}
+
+.container1
+{
+    grid-template-columns:56.5% 43.5%;
+    margin-top:12%;
+}
+
+.item{
+    z-index: 0;
+}
+
+.item-1{
+    padding:0 0 20px;
+    grid-column: 1/1;
+    grid-row:1/1;
+    border-right: 2px solid black;
+    border-bottom: 4px solid black;
+}
+
+.item-2{
+    padding: 0 40px 0 40px;
+    grid-column: 2/2;
+    grid-row:1/1;
+    border-left: 2px solid black;
+    border-bottom: 4px solid black;
+}
+
+.text1 {
+    width:456px;
+    height: 400px;
+    text-align:center;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    color: white;
+    background-color: #176E63;
+}
+
+.container2{
+    grid-template-columns:43.5% 56.5% ;
+}
+
+.item-3{
+    padding:20px 40px 20px 0px;
+    grid-column: 1/1;
+    grid-row:1/1;
+    border-right: 2px solid black;
+    border-bottom: 4px solid black;
+}
+.item-4 {
+    padding: 20px 0px 20px 40px ;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    align:right;
+    border-left: 2px solid black;
+    border-bottom: 4px solid black;
+}
+
+.text2 {
+    width: 456px;
+    height: 200px;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    color: black;
+    background-color: #CCFBF1;
+}
+
+.container3{
+    grid-template-columns:56.5% 43.5%;
+}
+
+.item-5{
+    grid-column: 1/1;
+    grid-row:1/1;
+    padding:20px 40px 20px 0px;
+    border-right: 2px solid black;
+    border-bottom: 4px solid black;
+}
+
+.item-6{
+    grid-column: 2/2;
+    grid-row:1/1;
+    padding:20px 0px 20px 40px;
+    border-left: 2px solid black;
+    border-bottom: 4px solid black;
+}
+
+.text3{
+    width:456px;
+    height: 400px;
+    text-align:center;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    color: white;
+    background-color: #8C1B2F;
+}
+
+.container4{
+    grid-template-columns:43.5% 56.5%;
+}
+
+.item-7{
+    padding:20px 40px 0px 0px;
+    grid-column: 1/1;
+    grid-row:1/1;
+    border-right: 2px solid black;
+}
+.item-8 {
+    padding: 0px 0px  0px 40px ;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    border-left: 2px solid black;
+}
+
+.text4 {
+    width: 456px;
+    height: 300px;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    color: black;
+    background-color: #F3E8EA;
 }
