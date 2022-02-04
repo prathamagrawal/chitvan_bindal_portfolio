@@ -1,0 +1,325 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    background-color:white;
+    position: relative;
+    color:#555;
+    font-family:'Lato','Arial','sans-serif';
+    font-size:20px;
+    font-weight:300;
+    text-rendering:optimizeLegibility;
+    overflow-x: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.clearfix{zoom:1}
+.clearfix{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
+
+.main-header
+{
+    background-image: url("../img/design/design1.png");
+    height: 100vh;
+    width: 100%;   
+    border: 2px solid grey;
+}
+
+*-----------------------------------------------*/
+/*Reusable Components*/
+/*-----------------------------------------------*/
+.row {
+    position: relative;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.row_navbar{
+    position: fixed;
+    overflow: hidden;
+    z-index: 100;
+    top: 0;
+    width:100%;
+    height: 7%;
+    background-color:#176E63;
+}
+
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #19d400;
+}
+
+a:hover,
+a:active{
+    color:#555;
+    border-bottom:1px solid transparent;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+
+.main-nav {
+    position: relative;
+    list-style: none;
+    margin-top: 0px;
+    z-index: 1;
+    font-family: "Roboto";
+    font-size:20px;
+    font-weight: normal;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left:80px;
+    z-index: 1;
+}
+
+
+.aboutlink {
+    margin-top: 25px;
+    float: left;
+}
+.worklink {
+    margin-top: 25px;
+    float: left;
+}
+
+.contactlink {
+    margin-top: 25px;
+    float: right;
+    margin-right:20%;
+}
+.linkedinlink{
+    margin-top: 25px;
+}
+
+.logo{
+    height:60px;
+    width:auto;
+    float: left;
+    margin-right: 10px;
+    margin-left: 50px;
+    margin-top:10px;
+    padding-bottom: 10px;
+}
+
+
+.logo-small {
+    position: relative;
+    padding:10px;
+    float:right;
+    left:19%;
+    top:15%;
+}
+
+
+
+.main-nav li{
+    display: inline-block;
+    margin-left:80px;
+    z-index: 1;
+}
+.active {
+    background-color: #04AA6D;
+  }
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    padding:10px;
+    border: 2px solid white;
+}
+
+/*-----------------------------------------------*/
+/*Features*/
+/*-----------------------------------------------*/
+
+.sticky{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+.sticky .main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color: #555555;
+}
+.sticky .logo{display: none;}
+.sticky .logo-black{display: block;}
+
+.greenbar{
+    margin-top:15%;
+    margin-left:0%;
+    position: relative;
+}
+
+.lines{
+    position:absolute;
+    margin-top:50%;
+    margin-left:5%;
+}
+
+.title1{
+    font-family: Nunito Sans;
+    font-weight: bolder;
+    color:black;
+    margin-top:6%;
+    position: absolute;
+    font-size: 48px;
+    margin-left:40%;
+}
+
+.design1para{
+    font-size: 20px;
+    color:black;
+    margin-top:12%;
+    position: absolute;
+    font-family: Nunito Sans;
+    margin-left:10%;
+}
+
+.buttonclass{
+    border-radius:50%;
+    position: absolute;
+    margin-top:30%;
+    border:none;
+    top:-15%;
+
+}
+
+.button1{
+    position: absolute;
+    left:15%;
+}
+
+.button2{
+    position: absolute;
+    left:35%;
+}
+
+.button3{
+    position: absolute;
+    left:55%; 
+}
+
+.button4{
+    position: absolute;
+    left:75%;
+}
+
+.imgdesigntitle{
+    height:90px;
+}
+
+
+.container{
+    margin-top:10%;
+    font-family: Nunito Sans;
+    background-color: #C4c4c4;
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid grey;
+}
+
+
+.page2title{
+    color: black;
+    font-size: 40px;
+    font-family: Nunito Sans;
+    border:6px solid #8C1B2F;
+    width:13.5%;
+    margin-left: 15%;
+    margin-top:25%;
+    padding:6px;
+    position: absolute;
+
+}
+
+.approach{
+    font-family: Nunito Sans;
+    padding:10px;
+    text-align: center;
+    border-radius:10%;
+    position: absolute;
+}
+
+.approach1{
+    border: 10px solid #176E63;
+    width:14%;
+    margin-left:50%;
+    margin-top:12%;
+}
+.arrow1{
+    margin-left:49.5%;
+    position: absolute;
+}
+
+.approach2{
+    border: 10px solid #23A897;
+    width:16%;
+    margin-left:71.5%;
+    margin-top:11%;
+}
+
+.arrow2{
+    position: absolute;
+    margin-left:64%;
+    margin-top:10.5%;
+}
+
+.approach3{
+    border: 10px solid #2EDBC4;
+    width:16%;
+    margin-left:71%;
+    margin-top:32%;
+}
+
+.arrow3{
+    position: absolute;
+    margin-left:56%;
+    margin-top:22.5%;
+}
+
+.approach4{
+    border: 10px solid #CCFBF1;
+    width:16%;
+    margin-left:49%;
+    margin-top:32%;
+}
+
+.arrow4{
+    position: absolute;
+    margin-left:31.5%;
+    margin-top:18.5%;
+}
