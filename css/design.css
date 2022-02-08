@@ -55,20 +55,7 @@ body{
     background-color:#176E63;
 }
 
-a:link,
-a:visited {
-    color: #000000;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #19d400;
-}
 
-a:hover,
-a:active{
-    color:#555;
-    border-bottom:1px solid transparent;
-    transition: border-bottom 0.2s,color 0.2s;
-}
 
 .main-nav {
     position: relative;
@@ -222,19 +209,39 @@ a:active{
 
 .button2{
     position: absolute;
-    left:35%;
+    left:37%;
 }
 
 .button3{
     position: absolute;
-    left:55%; 
+    left:59%; 
 }
 
 .button4{
     position: absolute;
-    left:75%;
+    left:81%;
 }
 
+.group {
+    position: absolute;
+    margin-top:30%;
+}
+
+.group1{
+    margin-left: 9.5%;
+}
+
+.group2{
+    margin-left: 32.5%;
+}
+
+.group3{
+    margin-left: 54.5%;
+}
+
+.group4{
+    margin-left: 76.5%;
+}
 .imgdesigntitle{
     height:90px;
 }
@@ -252,6 +259,9 @@ a:active{
     border-bottom: 2px solid grey;
 }
 
+.page2{
+    border-bottom: 2px solid grey;
+}
 
 .page2title{
     color: black;
@@ -322,4 +332,125 @@ a:active{
     position: absolute;
     margin-left:31.5%;
     margin-top:18.5%;
+}
+
+
+.page3title{
+    color: black;
+    font-size: 40px;
+    font-family: Nunito Sans;
+    border:6px solid #8C1B2F;
+    width:10.5%;
+    margin-left: 15%;
+    margin-top:25%;
+    padding:6px;
+    position: absolute;
+}
+
+
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 1px;   
+}
+
+
+a:hover,
+a:active{
+    color:blue;
+    border-bottom:1px solid transparent;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+
+
+.page2para
+{
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top:10%;
+    margin-left: 40%;
+}
+
+.page2list
+{
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 41%;
+}
+
+.table1title{
+    font-family: Nunito Sans;
+    margin-left: 60%;
+    margin-top:1%;
+}
+
+.table2title{
+    font-family: Nunito Sans;
+    margin-left: 60%;
+    margin-top:1%;
+    margin-bottom: 6%;
+}
+.table1
+{
+    border:1px solid black;
+    width:60%;
+    font-family:Nunito Sans;
+    font-size: 18px;
+    text-align:center;
+    margin-top:4%;
+    margin-left: 32%;
+    padding:0px;
+}
+
+tr, th, td
+{
+    border:1px solid black;   
+}
+
+.table2{
+    border:1px solid black;
+    width:60%;
+    font-family:Nunito Sans;
+    font-size: 18px;
+    text-align:center;
+    margin-top:5%;
+    margin-left: 32%;
+    padding:0px;
+}
+
+.page3
+{
+    width:100%;
+    height: 60%;
+}
+
+.page4title{
+    color: black;
+    font-size: 40px;
+    font-family: Nunito Sans;
+    border:6px solid #8C1B2F;
+    width:17.5%;
+    margin-left: 15%;
+    margin-top:12%;
+    padding:6px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.para3{
+    font-family: Nunito Sans;
+    margin-top: 6%;
+    margin-left: 45%;
+    font-weight: 500;
+}
+
+.list
+{
+    font-weight: 500;
+    font-family: Nunito Sans;
+    margin-top: 1%;
+    margin-left: 46%;
 }
